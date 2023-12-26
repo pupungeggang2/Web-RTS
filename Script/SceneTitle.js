@@ -22,6 +22,9 @@ function mouseUpTitle(x, y, button) {
                     pause = false
                     selected = -1
                 }
+            } else if (state === 'load') {
+                //audio.play()
+                state = ''
             }
         }
     }

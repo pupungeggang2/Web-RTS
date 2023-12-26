@@ -5,6 +5,8 @@ window.oncontextmenu = rightClick
 function main() {
     canvas = document.getElementById('Screen')
     context = canvas.getContext('2d')
+    audio = new Audio('Audio/123.wav')
+    audio.loop = true
 
     window.addEventListener('mouseup', mouseUp, false)
     window.addEventListener('mousedown', mouseDown, false)
