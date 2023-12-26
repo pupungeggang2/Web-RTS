@@ -35,19 +35,57 @@ function loop() {
 }
 
 function mouseUp(event) {
+    let canvasRect = canvas.getBoundingClientRect()
+    let x = event.clientX - canvasRect.left
+    let y = event.clientY - canvasRect.top
+    let button = event.button
 
+    if (scene === 'Title') {
+        mouseUpTitle(x, y, button)
+    } else if (scene === 'LevelSelect') {
+        mouseUpLevelSelect(x, y, button)
+    } else if (scene === 'Game') {
+        mouseUpGame(x, y, button)
+    }
 }
 
 function mouseDown(event) {
+    let canvasRect = canvas.getBoundingClientRect()
+    let x = event.clientX - canvasRect.left
+    let y = event.clientY - canvasRect.top
+    let button = event.button
 
+    if (scene === 'Title') {
+        mouseDownTitle(x, y, button)
+    } else if (scene === 'LevelSelect') {
+        mouseDownLevelSelect(x, y, button)
+    } else if (scene === 'Game') {
+        mouseDownGame(x, y, button)
+    }
 }
 
 function keyDown(event) {
+    let key = event.key
 
+    if (scene === 'Title') {
+        keyDownTitle(key)
+    } else if (scene === 'LevelSelect') {
+        keyDownLevelSelect(key)
+    } else if (scene === 'Game') {
+        keyDownGame(key)
+    }
 }
 
 function keyUp(event) {
+    let key = event.key
 
+    if (scene === 'Title') {
+        keyUpTitle(key)
+    } else if (scene === 'LevelSelect') {
+        keyUpLevelSelect(key)
+    } else if (scene === 'Game') {
+        keyUpGame(key)
+    }
 }
 
 function errorHandle(err, url, line, col, obj) {
