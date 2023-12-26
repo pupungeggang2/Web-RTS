@@ -13,7 +13,18 @@ function displayTitle() {
 }
 
 function mouseUpTitle(x, y, button) {
-
+    if (button === 0) {
+        if (pause === false) {
+            if (state === '') {
+                if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
+                    scene = 'LevelSelect'
+                    state = ''
+                    pause = false
+                    selected = -1
+                }
+            }
+        }
+    }
 }
 
 function mouseDownTitle(x, y, button) {
