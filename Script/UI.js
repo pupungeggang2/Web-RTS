@@ -20,4 +20,15 @@ const UI = {
             
         }
     },
+
+    menu : {
+        rect : [320, 200, 640, 320],
+        textPause : [328, 224],
+        buttonResume : [320, 280, 640, 80],
+        textResume : [328, 304],
+        buttonLevelSelect : [320, 360, 640, 80],
+        textLevelSelect : [328, 384],
+        buttonTitle : [320, 440, 640, 80],
+        textTitle : [328, 464],
+    }
 }
