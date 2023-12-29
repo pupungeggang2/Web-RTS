@@ -17,7 +17,13 @@ const UI = {
 
     game : {
         lower : {
-            
+            energyText : [],
+            energyBar : [],
+            lifeText : [],
+            lifeBar : [],
+            hand : [],
+            card : [],
+            cardBack : [],
         }
     },
 

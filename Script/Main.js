@@ -14,6 +14,7 @@ function main() {
     window.addEventListener('keyup', keyUp, false)
 
     imageLoad()
+    saveInit()
 
     gameFrameCurrent = Date.now()
     gameFramePrevious = Date.now() - 16

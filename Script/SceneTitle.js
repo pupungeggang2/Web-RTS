@@ -12,6 +12,18 @@ function displayTitle() {
     context.fillText(`Erase Data`, UI.title.textErase[0], UI.title.textErase[1])
 }
 
+function keyDownTitle(key) {
+
+}
+
+function keyUpTitle(key) {
+
+}
+
+function mouseDownTitle(x, y, button) {
+
+}
+
 function mouseUpTitle(x, y, button) {
     if (button === 0) {
         if (pause === false) {
@@ -22,22 +34,10 @@ function mouseUpTitle(x, y, button) {
                     pause = false
                     selected = -1
                 }
-            } else if (state === 'load') {
+            } else if (state === 'Load') {
                 //audio.play()
                 state = ''
             }
         }
     }
-}
-
-function mouseDownTitle(x, y, button) {
-
-}
-
-function keyDownTitle(key) {
-
-}
-
-function keyUpTitle(key) {
-
 }
