@@ -17,13 +17,16 @@ const UI = {
 
     game : {
         lower : {
-            energyText : [],
-            energyBar : [],
-            lifeText : [],
-            lifeBar : [],
-            hand : [],
+            iconLife : [40, 640],
+            iconEnergy : [40, 680],
+            textLife : [84, 648],
+            textEnergy : [84, 688],
+            lifeBar : [200, 640],
+            energyBar : [200, 680],
+            ability : [400, 640, 80, 80],
+            hand : [480, 640, 640, 80],
             card : [],
-            cardBack : [],
+            cardBack : [1120, 640, 80, 80],
         }
     },
 
