@@ -16,7 +16,11 @@ let sessionVar = {
 }
 
 let selected = {
+    level : -1,
+}
 
+let gameVar = {
+    selectedLevel : -1,
 }
 
 let player = {

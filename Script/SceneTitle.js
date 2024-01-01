@@ -32,7 +32,7 @@ function mouseUpTitle(x, y, button) {
                     scene = 'LevelSelect'
                     state = ''
                     pause = false
-                    selected = -1
+                    selected.level = -1
                 }
             } else if (state === 'Load') {
                 //audio.play()

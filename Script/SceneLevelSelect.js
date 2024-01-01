@@ -13,22 +13,23 @@ function displayLevelSelect() {
 function mouseDownLevelSelect(x, y, button) {
     if (button === 0) {
         if (pause === false) {
-            if (state === '') {
-                if (pointInsideRectArray(x, y, UI.buttonMenu)) {
-                    scene = 'Title'
-                    state = ''
-                    pause = false
-                }
+            if (pointInsideRectArray(x, y, UI.buttonMenu)) {
+                scene = 'Title'
+                state = ''
+                pause = false
+            }
 
-                for (let i = 0; i < 6; i++) {
+            if (state === '') {
+                for (let i = 0; i < 3; i++) {
                     if (pointInsideRectArray(x, y, UI.levelSelect.buttonLevel[i])) {
-                        if (i === selected) {
-                            scene = 'Game'
+                        if (i === selected.level) {
+                            scene = 'Map'
                             state = ''
                             pause = false
-                            selected = -1
+                            gameVar.selectedLevel = i
+                            selected.level = -1
                         } else {
-                            selected = i
+                            selected.level = i
                         }
                     }
                 }

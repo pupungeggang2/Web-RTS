@@ -11,9 +11,13 @@ function drawSceneInit() {
 }
 
 function drawLevel() {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
         context.strokeRect(UI.levelSelect.buttonLevel[i][0], UI.levelSelect.buttonLevel[i][1], UI.levelSelect.buttonLevel[i][2], UI.levelSelect.buttonLevel[i][3])
     }
+}
+
+function drawField() {
+
 }
 
 function drawUILower() {

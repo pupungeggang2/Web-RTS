@@ -29,6 +29,8 @@ function loop() {
         loopTitle()
     } else if (scene === 'LevelSelect') {
         loopLevelSelect()
+    } else if (scene === 'Map') {
+        loopMap()
     } else if (scene === 'Game') {
         loopGame()
     }
@@ -47,6 +49,8 @@ function mouseUp(event) {
         mouseUpTitle(x, y, button)
     } else if (scene === 'LevelSelect') {
         mouseUpLevelSelect(x, y, button)
+    } else if (scene === 'Map') {
+        mouseUpMap(x, y, button)
     } else if (scene === 'Game') {
         mouseUpGame(x, y, button)
     }
@@ -62,6 +66,8 @@ function mouseDown(event) {
         mouseDownTitle(x, y, button)
     } else if (scene === 'LevelSelect') {
         mouseDownLevelSelect(x, y, button)
+    } else if (scene === 'Map') {
+        mouseDownMap(x, y, button)
     } else if (scene === 'Game') {
         mouseDownGame(x, y, button)
     }
@@ -74,6 +80,8 @@ function keyDown(event) {
         keyDownTitle(key)
     } else if (scene === 'LevelSelect') {
         keyDownLevelSelect(key)
+    } else if (scene === 'Map') {
+        keyDownMap(key)
     } else if (scene === 'Game') {
         keyDownGame(key)
     }
@@ -86,6 +94,8 @@ function keyUp(event) {
         keyUpTitle(key)
     } else if (scene === 'LevelSelect') {
         keyUpLevelSelect(key)
+    } else if (scene === 'Map') {
+        keyUpMap(key)
     } else if (scene === 'Game') {
         keyUpGame(key)
     }

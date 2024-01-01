@@ -7,6 +7,7 @@ function displayGame() {
 
     context.strokeRect(UI.buttonMenu[0], UI.buttonMenu[1], UI.buttonMenu[2], UI.buttonMenu[3])
 
+    drawField()
     drawUILower()
 
     if (pause === true) {
